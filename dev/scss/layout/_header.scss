@@ -1,0 +1,67 @@
+/* =============
+    Header
+============= */
+
+header{
+background-color: $red;
+top: 0;
+left: 0;
+position: fixed;
+z-index: 100;
+width: 100%;
+
+    div{
+
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+
+        #logo-container{
+            padding: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 30px;
+
+                @include md{
+                    width: initial;
+                }
+            }
+        }
+
+        #name-container{
+            font-family: 'Dancing Script', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $light-pink;
+            font-size: rem-calc(9.5);
+
+            @include md{
+                font-size: rem-calc(20);
+            }
+        }
+    
+        #burger-container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            #burger{
+                cursor: pointer;
+                transition: .25s;
+
+                #lines{
+                    stroke: white !important;
+                    transition: .25s;
+                }
+
+                &:hover{
+                    #lines{
+                        stroke: $light-pink !important;
+                    }
+                }
+            }
+        }
+    }
+}

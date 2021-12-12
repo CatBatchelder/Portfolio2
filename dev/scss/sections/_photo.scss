@@ -1,0 +1,110 @@
+/* =============
+    Portraits
+============= */
+
+#photo-portrait {
+    @include md {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". slider .";
+    }
+
+    @include lg {
+        grid-template-columns: 25% auto 25%;
+    }
+
+    div {
+        @include md {
+            grid-area: slider;
+        }
+
+        h3 {
+
+            text-align: center;
+            color: $light-blue;
+            font-size: rem-calc(18);
+            font-weight: 400;
+
+            @include md {
+                font-size: rem-calc(20);
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+        }
+
+        section {
+
+
+            .my-slider {
+                div {
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        object-position: center;
+                    }
+                }
+            }
+
+            .tns-controls [aria-controls] {
+                color: $red;
+                background: $pink;
+            }
+        }
+    }
+}
+
+/* =============
+    Organic and Geometric
+============= */
+
+#photo-org {
+    @include md {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". org .";
+    }
+
+    @include lg {
+        grid-template-columns: 25% auto 25%;
+    }
+
+    div {
+        @include md {
+            grid-area: org;
+        }
+
+        h3 {
+
+            text-align: center;
+            color: $light-blue;
+            font-size: rem-calc(18);
+            font-weight: 400;
+
+            @include md {
+                font-size: rem-calc(20);
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+        }
+
+        section {
+
+            .my-slider-2 {
+                div {
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        object-position: center;
+                    }
+                }
+            }
+
+            .tns-controls [aria-controls] {
+                color: $red;
+                background: $pink;
+            }
+        }
+    }
+}
