@@ -413,8 +413,8 @@ body {
   font-size: 1.875rem;
   text-align: center;
   font-weight: 500;
-  color: #394B68;
-  margin-top: 100px;
+  color: #743646;
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .title-text {
@@ -514,7 +514,7 @@ textarea {
     Navigation
 ============= */
 #main-nav {
-  background-color: #394B68;
+  background-color: #000;
   display: grid;
   place-items: center;
   position: fixed;
@@ -569,23 +569,14 @@ textarea {
     grid-area: links;
   }
 }
-#main-nav #nav-links ul li img {
-  padding-right: 20px;
-  vertical-align: -50%;
-}
-@media (min-width: 1025px) {
-  #main-nav #nav-links ul li img {
-    vertical-align: 0%;
-  }
-}
 #main-nav #nav-links ul li a:link,
 #main-nav #nav-links ul li a:visited {
-  color: #DC9699;
+  color: #743646;
   text-decoration: none;
   display: inline-block;
   font-size: 1.5625rem;
   padding: 20px 0 20px 10px;
-  border-bottom: 1px solid #6A8AA7;
+  border-bottom: 1px solid #fff;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -941,7 +932,7 @@ pre[class*=language-] {
     Header
 ============= */
 header {
-  background-color: #743646;
+  background-color: #000;
   top: 0;
   left: 0;
   position: fixed;
@@ -950,7 +941,7 @@ header {
 }
 header div {
   display: grid;
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: 10% auto 10%;
 }
 header div #logo-container {
   padding: 5px 0;
@@ -1000,7 +991,7 @@ header div #burger-container #burger:hover #lines {
     Footer
 ============= */
 footer {
-  background-color: #743646;
+  background-color: #000;
   position: relative;
 }
 footer div {
@@ -1024,7 +1015,7 @@ footer div ul li a:visited {
 footer div ul li a:link:hover, footer div ul li a:link:active,
 footer div ul li a:visited:hover,
 footer div ul li a:visited:active {
-  color: #6A8AA7;
+  color: #743646;
 }
 @media (min-width: 768px) {
   footer div ul li a:link,
@@ -1088,7 +1079,7 @@ footer div #footer-copyright p {
 #home-illustrations div h1 {
   text-align: center;
   font-size: 1.875rem;
-  color: #394B68;
+  color: #000;
   font-family: "Halant", serif;
   font-weight: 500;
 }
@@ -1104,23 +1095,14 @@ footer div #footer-copyright p {
 }
 #home-illustrations div ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  grid-template-areas: "g1 g2" "g3 g4" "g5 g6";
+  grid-template-areas: "g4" "g1" "g6";
 }
 @media (min-width: 768px) {
   #home-illustrations div ul {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px);
-    grid-template-areas: "g1 g2 g3" "g4 g5 g6";
-  }
-}
-@media (min-width: 1025px) {
-  #home-illustrations div ul {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 200px);
-    grid-template-areas: "g1 g2 g3 g4 g5 g6";
+    grid-template-areas: "g4 g1 g6";
   }
 }
 #home-illustrations div ul li {
@@ -1135,7 +1117,7 @@ footer div #footer-copyright p {
 }
 #home-illustrations div ul li a h3 {
   text-align: center;
-  color: #6A8AA7;
+  color: #000;
   font-size: 1.25rem;
   font-weight: 400;
 }
@@ -1147,17 +1129,8 @@ footer div #footer-copyright p {
 #home-illustrations div ul li:nth-child(1) {
   grid-area: g1;
 }
-#home-illustrations div ul li:nth-child(2) {
-  grid-area: g2;
-}
-#home-illustrations div ul li:nth-child(3) {
-  grid-area: g3;
-}
 #home-illustrations div ul li:nth-child(4) {
   grid-area: g4;
-}
-#home-illustrations div ul li:nth-child(5) {
-  grid-area: g5;
 }
 #home-illustrations div ul li:nth-child(6) {
   grid-area: g6;
@@ -1167,7 +1140,7 @@ footer div #footer-copyright p {
     Contact
 ============= */
 #home-contact {
-  background-color: #DC9699;
+  background-color: #743646;
   padding: 30px 0;
   margin-bottom: 0;
   position: relative;
@@ -1211,7 +1184,7 @@ footer div #footer-copyright p {
 #home-contact p a:link:hover, #home-contact p a:link:active,
 #home-contact p a:visited:hover,
 #home-contact p a:visited:active {
-  color: #6A8AA7;
+  color: #000;
 }
 
 /* =============

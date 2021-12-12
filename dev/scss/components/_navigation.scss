@@ -3,7 +3,7 @@
 ============= */
 
 #main-nav {
-    background-color: $dark-blue;
+    background-color: $black;
     display: grid;
     place-items: center;
     // grid-template-columns: 50% auto;
@@ -68,15 +68,15 @@
             li {
                 
 
-                img {
-                    padding-right: 20px;
-                    vertical-align: -50%;
+                // img {
+                //     padding-right: 20px;
+                //     vertical-align: -50%;
 
-                    @include lg{
-                        vertical-align: 0%;
-                    }
+                //     @include lg{
+                //         vertical-align: 0%;
+                //     }
 
-                }
+                // }
 
                   
 
@@ -85,12 +85,12 @@
                     {
                     
                   
-                    color: $pink;
+                    color: $red;
                     text-decoration: none;
                     display: inline-block;
                     font-size: rem-calc(25);
                     padding: 20px 0 20px 10px;
-                    border-bottom: 1px solid $light-blue;
+                    border-bottom: 1px solid $white;
                     width: 100%;
 
                     @include md {

@@ -3,7 +3,7 @@
 ============= */
 
 header{
-background-color: $red;
+background-color: $black;
 top: 0;
 left: 0;
 position: fixed;
@@ -13,7 +13,7 @@ width: 100%;
     div{
 
         display: grid;
-        grid-template-columns: 20% auto 20%;
+        grid-template-columns: 10% auto 10%;
 
         #logo-container{
             padding: 5px 0;
