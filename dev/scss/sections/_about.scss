@@ -31,10 +31,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
 
             img {
                 grid-area: pic;
-
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                    
+                
             }
         }
 
@@ -43,6 +48,7 @@
 
             @include md {
                 margin-top: 40px;
+                padding: 20px;
             }
 
             @include lg {
@@ -72,7 +78,7 @@
 
 #about-story{
 
-    background-color: $light-pink;
+    background-color: $red;
     padding: 20px 10px;
     margin-bottom: 0;
 
@@ -91,7 +97,7 @@
             text-align: center;
             font-family: 'Halant', serif;
             font-weight: 500;
-            color: $dark-blue;
+            color: $white;
             font-size: rem-calc(30);
 
             @include md{
@@ -110,7 +116,7 @@
         
         p{
             text-align: justify;
-            color: $red;
+            color: $white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -140,28 +146,36 @@
 #about-bullets{
     
     div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         ul{
+            
+
             @include md{
                 display: grid;
-            grid-template-columns: 3;
+            grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "1 2 3";
             }
 
             li{
                 display: grid;
-                grid-template-columns: 40% auto;
-                grid-template-areas: "img type";
+                grid-template-columns: 20% 10% auto;
+                grid-template-areas: "img . type";
 
                 @include md{
-                    grid-template-columns: 30% auto;
-                    display: flex;
-                justify-content: center;
-                align-items: center;
+                    grid-template-columns: 30% 10% auto;
+                //     display: flex;
+                // justify-content: center;
+                // align-items: center;
                 }
 
                 img{
                     grid-area: img;
                     margin-left: 30px;
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
 
                     @include md{
                         margin-left: 0;
@@ -173,6 +187,10 @@
                     grid-area: type;
                     color: $red;
                     font-weight: 300;
+                    padding-left: 20px;
+                    display: flex;
+            justify-content: center;
+            align-items: center;
 
                 }
             }

@@ -3,8 +3,8 @@
 ============= */
 
 .pink-button{
-    background-color: $light-pink;
-    color: $red;
+    background-color: $red;
+    color: $white;
     border-radius: 8px;
     font-weight: 400;
     font-size: rem-calc(18);
@@ -27,6 +27,6 @@
     }
 
     &:hover{
-        background-color: $pink;
+        background-color: $black;
     }
 }
